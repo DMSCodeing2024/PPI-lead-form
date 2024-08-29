@@ -19,7 +19,7 @@
 
     <section id="form_section">
         <div class="container">
-            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc_1y1QbBPUTUS4OFPHre5rPSNTHALnyMK9MNKqEDqUZL3OOw/formResponse" method="post">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc_1y1QbBPUTUS4OFPHre5rPSNTHALnyMK9MNKqEDqUZL3OOw/formResponse" method="post" id="apply_btn">
                 <div class="row">
                     <div class="col-lg-12 mt-3">
                         <label for="">Full name</label>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-lg mt-5" id="apply_btn">Application Submit</button>
+                <button type="submit" class="btn btn-lg mt-5">Application Submit</button>
             </form>
         </div>
     </section>
@@ -83,13 +83,13 @@
 
 
     <script>
-        var page = 0;
-        $('#apply_btn').load(function() {
-            page++;
-            if ( page * 3 ) {  // Replace with Number of Pages in Survey
-                document.location = "https://dmscodeing2024.github.io/PPI-lead-form/thankyou";  //  Replace with the Page you want to send them to
-            }
-        });
+        // var page = 0;
+        // $('#apply_btn').load(function() {
+        //     page++;
+        //     if ( page === 1 ) {  // Replace with Number of Pages in Survey
+        //         document.location = "https://dmscodeing2024.github.io/PPI-lead-form/thankyou";  //  Replace with the Page you want to send them to
+        //     }
+        // });
     </script>
 
     <script src="./app.js"></script>
